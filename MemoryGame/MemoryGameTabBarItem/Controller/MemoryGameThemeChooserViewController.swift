@@ -95,7 +95,7 @@ extension MemoryGameThemeChooserViewController: UISplitViewControllerDelegate {
     override func awakeFromNib() {
         self.splitViewController?.delegate = self
     }
-    
+
     func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
         if let cvc = secondaryViewController as? MemoryGameViewController, cvc.theme == nil {
             lastDetailController = cvc
